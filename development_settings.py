@@ -6,7 +6,7 @@ TEMPLATE_DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(ROOT_PATH, '/db/sqlite.db'),
+        'NAME': os.path.join(ROOT_PATH, 'db/sqlite.db'),
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
