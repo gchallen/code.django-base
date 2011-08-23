@@ -1,0 +1,7 @@
+*.pyc
+*.swp
+migrations
+local_settings.py
+/db
+/static
+/media
