@@ -1,10 +1,10 @@
 import os
 import sys
  
-path = '/home/challen/code/django'
+path = '/srv/django'
 if path not in sys.path:
     sys.path.append(path)
-path = '/home/challen/code/django/production'
+path = '/srv/django/production'
 if path not in sys.path:
     sys.path.append(path)
  
