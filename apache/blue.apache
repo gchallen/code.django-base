@@ -1,16 +1,16 @@
 <VirtualHost *:80>
     ServerName blue.cse.buffalo.edu
-    Alias /media/ /home/challen/code/django/production/media/
-    <Directory /home/challen/code/django/production/media/">
+    Alias /media/ /srv/django/production/media/
+    <Directory /srv/django/production/media/">
     Order deny,allow
     Allow from all
     </Directory>
     
-    Alias /static/ /home/challen/code/django/production/static/
-    <Directory /home/challen/code/django/production/static/">
+    Alias /static/ /srv/django/production/static/
+    <Directory /srv/django/production/static/">
     Order deny,allow
     Allow from all
     </Directory>
     
-    WSGIScriptAlias / /home/challen/code/django/production/apache/blue.wsgi
+    WSGIScriptAlias / /srv/django/production/apache/blue.wsgi
 </VirtualHost>
