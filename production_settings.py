@@ -19,3 +19,7 @@ STATIC_URL = '/static/'
 AWS_ACCESS_KEY_ID = 'AKIAJGTF2EAMZBLFWPIA'
 AWS_SECRET_ACCESS_KEY = '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'
 EMAIL_BACKEND = 'django_ses.SESBackend'
+
+TEMPLATE_DIRS = (
+  os.path.join(ROOT_PATH, 'course/templates'),
+)

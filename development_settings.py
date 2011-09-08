@@ -18,3 +18,8 @@ MEDIA_URL = 'http://127.0.0.1:8000/media/'
 ADMIN_MEDIA_PREFIX = '/static/admin/'
 STATIC_ROOT = os.path.join(ROOT_PATH, 'static')
 STATIC_URL = '/static/'
+
+TEMPLATE_DIRS = (
+  os.path.join(ROOT_PATH, 'course/templates'),
+)
+
