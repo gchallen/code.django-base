@@ -22,4 +22,4 @@ STATIC_URL = '/static/'
 TEMPLATE_DIRS = (
   os.path.join(ROOT_PATH, 'course/templates'),
 )
-
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
