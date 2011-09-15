@@ -1,13 +1,13 @@
 <VirtualHost *:80>
     ServerName blue.cse.buffalo.edu
     Alias /media/ /srv/django/production/media/
-    <Directory /srv/django/production/media/">
+    <Directory "/srv/django/production/media/">
     Order deny,allow
     Allow from all
     </Directory>
     
     Alias /static/ /srv/django/production/static/
-    <Directory /srv/django/production/static/">
+    <Directory "/srv/django/production/static/">
     Order deny,allow
     Allow from all
     </Directory>
