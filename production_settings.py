@@ -1,4 +1,6 @@
 import os
+from settings import INSTALLED_APPS
+
 ROOT_PATH = os.path.dirname(__file__)
 DEBUG = True
 TEMPLATE_DEBUG = True
@@ -22,5 +24,8 @@ AWS_SECRET_ACCESS_KEY = '9rnKAoAG0MR/JvCfY0rpv3KebkrJ/i5dV9lwFbTT'
 TEMPLATE_DIRS = (
   os.path.join(ROOT_PATH, 'course/templates'),
 )
-#EMAIL_BACKEND = 'django_ses.SESBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+INSTALLED_APPS += ('django_ses',)
+
+EMAIL_BACKEND = 'django_ses.SESBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
